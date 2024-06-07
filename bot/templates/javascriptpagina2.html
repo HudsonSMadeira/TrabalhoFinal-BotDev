@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/javascriptpagina2.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>Página Inicial</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <img src="{% static 'img/preview.png' %}" alt="" class='logo'>
+                <div class="title">
+                    <h1>O que é <span class="react">JavaScript</span>  <br></h1>
+                </div>
+            </div>
+
+            <div class="content">
+               
+            </div>
+
+        </div>
+
+        <div class="back">
+            <a href="{% url 'javascriptpagina1' %}"><img src="{% static 'img/seta-voltar.png' %}" alt="Voltar" class='seta'></a>
+        </div>
+
+    </body>
+
+</html>

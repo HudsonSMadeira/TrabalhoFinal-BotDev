@@ -4,10 +4,12 @@ from .views import *
 
 urlpatterns = [
     path('', paginaInicial, name='paginaInicial'),
-    path('pagina1', pagina1, name='pagina1'),
-    path('pagina2', pagina2, name='pagina2'),
-    path('pagina3', pagina3, name='pagina3'),
-    path('pagina4', pagina4, name='pagina4'),
-  
+    path('reactpagina1', reactpagina1, name='reactpagina1'),
+    path('reactpagina2', reactpagina2, name='reactpagina2'),
+    path('javascriptpagina1', javascriptpagina1, name='javascriptpagina1'),
+    path('javascriptpagina2', javascriptpagina2, name='javascriptpagina2'),
+    path('htmlpagina1', htmlpagina1, name='htmlpagina1'),
+    path('htmlpagina2', htmlpagina2, name='htmlpagina2'),
+    path('frameworkpagina1', frameworkpagina1, name='frameworkpagina1'),
+    path('frameworkpagina2', frameworkpagina2, name='frameworkpagina2'),
 ]
-

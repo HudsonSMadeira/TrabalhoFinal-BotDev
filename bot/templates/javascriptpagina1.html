@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/javascriptpagina1.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>Página Inicial</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <img src="{% static 'img/preview.png' %}" alt="" class='logo'>
+                <div class="title">
+                    <h1>Você escolheu -> <span class="react"> JavaScript </span>!</h1>
+                </div>
+            </div>
+
+            <ul class="questions">
+                <li><a href="{% url 'javascriptpagina2' %}">O que é JavaScript e qual a sua função principal no desenvolvimento web?</a></li>
+                <li><a href="{% url 'paginaInicial' %}"></a></li>
+                <li><a href="{% url 'paginaInicial' %}"></a></li>
+                <li><a href="{% url 'paginaInicial' %}"></a></li>
+                <li><a href="{% url 'paginaInicial' %}"></a></li>
+                <li><a href="{% url 'paginaInicial' %}"></a></li>
+            </ul>
+
+        </div>
+
+        <div class="back">
+            <a href="{% url 'paginaInicial' %}"><img src="{% static 'img/seta-voltar.png' %}" alt="Voltar" class='seta'></a>
+        </div> 
+
+    </body>
+
+    </body>
+
+</html>
