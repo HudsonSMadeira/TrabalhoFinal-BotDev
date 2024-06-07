@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/paginaInicial.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>Página Inicial</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <img src="{% static 'img/logo.png' %}" alt="" class='logo'>
+            </div>
+
+            <div class="question">
+                <p>Qual assunto você gostaria de saber?</p>
+            </div>
+
+            <ul class="buttons">
+                <li><a href="{% url 'pagina1' %}">JavaScript</a></li>
+                <li><a href="{% url 'pagina2' %}">React</a></li>
+                <li><a href="{% url 'pagina3' %}">HTML</a></li>
+                <li><a href="{% url 'pagina4' %}">Framework</a></li>
+            </ul>
+
+        </div>
+
+        <footer>
+            <div class="container">
+
+                <div class="top">
+
+                    <div class="links">
+
+                        <h4>Links</h4>
+
+                        <ul class="link-list">
+                            <li>
+                                <a href="#">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="#">Site</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="newsletter">
+
+                        <h4>Entre em contato</h4>
+
+                        <form action="">
+                            <div class="form">
+                                <input type="email" placeholder="Email">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    
+                </div>
+
+                <hr>
+
+                <div class="footerbottom"> 
+                    <p><a href="#">Termos</a> | <a href="#">Politica de privacidade</a></p> 
+                    <p>Bot Dev - IFPI Campus Floriano &copy; 2024</p>  
+                </div>
+
+            </div>
+
+        </footer>
+    </body>
+
+</html>
