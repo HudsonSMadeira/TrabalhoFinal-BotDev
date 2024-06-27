@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/reactpagina2.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>Página Inicial</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <img src="{% static 'img/preview.png' %}" alt="" class='logo'>
+                <div class="title">
+                    <h1>Desvende o conceito de fluxo de dados unidirecional no <span class="react">React</span> e seus benefícios na organização e previsibilidade do código.</span>?</h1>
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    <strong class="destak">Definição:</strong> No React, o conceito de fluxo de dados unidirecional significa que os dados fluem em uma única direção, do componente pai para os componentes filhos.
+                    Os componentes pais passam dados para os filhos através de propriedades (props), e esses dados são imutáveis para os componentes filhos.
+                    Se um componente filho precisar alterar os dados, ele deve solicitar a alteração ao componente pai, que então ajusta seu estado e repassa os dados atualizados.<br>
+                    
+                </p>
+            </div>
+
+        </div>
+
+        <div class="back">
+            <a href="{% url 'reactpagina1' %}"><img src="{% static 'img/seta-voltar.png' %}" alt="Voltar" class='seta'></a>
+        </div>
+
+    </body>
+
+</html>

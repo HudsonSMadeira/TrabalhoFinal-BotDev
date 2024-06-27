@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/reactpagina2.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>Página Inicial</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <img src="{% static 'img/preview.png' %}" alt="" class='logo'>
+                <div class="title">
+                    <h1>O que é o Virtual DOM e como ele otimiza a atualização da interface no <span class="react">React</span>?</h1>
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    <strong class="destak">Definição:</strong>É uma representação virtual da estrutura hierárquica da interface de usuário em memória, mantida pelo React. Ele funciona como uma cópia leve e eficiente do DOM real do navegador. Quando ocorre uma atualização de estado em um componente React, o Virtual DOM é comparado com o estado anterior para identificar as diferenças (diffing). Com base nessas diferenças, o React determina os mínimos conjuntos de alterações necessários no DOM real para refletir essas mudanças.<br>
+                    
+                </p>
+            </div>
+
+        </div>
+
+        <div class="back">
+            <a href="{% url 'reactpagina1' %}"><img src="{% static 'img/seta-voltar.png' %}" alt="Voltar" class='seta'></a>
+        </div>
+
+    </body>
+
+</html>
