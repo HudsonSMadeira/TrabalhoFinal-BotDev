@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/reactpagina2.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>Página Inicial</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <img src="{% static 'img/preview.png' %}" alt="" class='logo'>
+                
+                <div class="title">
+                    <h1>Apresente os Hooks do <span class="react">React</span> e demonstre como eles simplificam o gerenciamento de estado e outros recursos sem a necessidade de classes</span>?</h1>
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    <strong class="destak">Definição:</strong>Os Hooks simplificam o desenvolvimento no React ao permitir que funcionalidades como estado, efeitos colaterais e contexto sejam utilizados diretamente em componentes funcionais. Isso elimina a complexidade das classes e torna o código mais legível, modular e fácil de testar.
+                    Além disso, os Hooks promovem a reutilização de lógica entre componentes sem a necessidade de herança ou mixins, resultando em uma base de código mais limpa e escalável.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="back">
+            <a href="{% url 'reactpagina1' %}"><img src="{% static 'img/seta-voltar.png' %}" alt="Voltar" class='seta'></a>
+        </div>
+
+    </body>
+
+</html>

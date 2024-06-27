@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/reactpagina2.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>Página Inicial</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <img src="{% static 'img/preview.png' %}" alt="" class='logo'>
+                <div class="title">
+                    <h1>O que é JSX e como ele facilita a criação de interfaces de usuário no <span class="react">React</span>?</h1>
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    <strong class="destak">Definição:</strong> JSX (JavaScript XML) é uma sintaxe semelhante a HTML para JavaScript usada no React, que facilita a criação de interfaces de usuário ao permitir que HTML e JavaScript sejam escritos juntos.
+                    Isso torna o código mais intuitivo e permite manipulação dinâmica do conteúdo com expressões JavaScript.
+                    JSX simplifica a manutenção e evolução do código, promovendo a reutilização de componentes e uma construção mais eficiente de interfaces dinâmicas.<br>
+                    
+                </p>
+            </div>
+
+        </div>
+
+        <div class="back">
+            <a href="{% url 'reactpagina1' %}"><img src="{% static 'img/seta-voltar.png' %}" alt="Voltar" class='seta'></a>
+        </div>
+
+    </body>
+
+</html>
